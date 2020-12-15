@@ -3,7 +3,7 @@ new WOW().init();
 $(document).ready(
     function(){
         $('.navbar-toggler').click(function(){
-            var openNav = $( ".navbar-toggler" ).attr("aria-expanded");
+            var openNav = $( ".navbar-toggler.right" ).attr("aria-expanded");
 
             if (openNav == "true") {
                 $(".dropdown-item").removeClass("dropdown-untoggled");
@@ -23,4 +23,8 @@ $(document).ready(
                 $('.navbar').removeClass('scrolled');
             }
         });
+
+        $(window).on('load', function () {
+            $("#loading").hide();
+            });
 });

@@ -66,7 +66,7 @@
     p{
         /* Paragraph content in sections */
         font-family:josefin sans,sans-serif;
-        color:#828281;
+        color:#828282;
         font-size:22px
     }
 
@@ -77,6 +77,24 @@
     .white .small,
     .white small{
         color:#eee
+    }
+
+    .start-of-page {
+        margin-top: 5%;
+    }
+
+    .end-of-page {
+        margin-bottom: 10%;
+    }
+
+    .loading-block {
+        margin-top: 15%;
+        margin-bottom: 100rem;
+    }
+
+    .loading-message {
+        margin: 5rem 0;
+        color: #555;
     }
 
 /* Navigation Bar */
@@ -90,6 +108,11 @@
 
     .navbar{
         background-color: rgb(2 1 0 / 0.3);
+        transition: background-color 0.4s ease-in-out;
+    }
+
+    .navbar.linked-page{
+        background-color: rgb(2 1 0 / 0.9);
         transition: background-color 0.4s ease-in-out;
     }
 
@@ -110,12 +133,6 @@
         font-weight: lighter;
     }
 
-    .navbar-brand>i{
-        margin-left: 1rem;
-        font-size: 30px;
-        padding: 0 0.3rem;
-    }
-
     .nav-item {
         text-align: center;
     }
@@ -128,14 +145,18 @@
         font-size: 13px;
     }
 
+    .nav-item.numero{
+        font-size: 20px;
+    }
+
     .nav-link:hover{
-        color: #f9c56a!important;
+        color: #ff7700!important;
     }
 
     .dropdown-menu {
         margin-top: 0.9rem;
         background: transparent!important;
-        background-color: rgb(2 1 0 / 0.3)!important;
+        background-color: rgb(2 1 0 / 0.9)!important;
         border-radius: 0;
         border: none;
     }
@@ -218,6 +239,18 @@
         background-position: center;
     }
 
+    #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(4) {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background: url('../img/home4.jpg');
+        background-size: cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-position: center;
+    }
+
 /* Song Section */ 
 
     .songs .page-header h1{
@@ -234,9 +267,15 @@
         padding-bottom: 1rem;
     }
 
-    .soundcloud-recent.last {
-        margin-bottom: 4rem;
+    .songs .page-header .youtube-red {
+        color: #ff0000;
     }
+
+    .page-header.youtube-red:after{
+        background-color:#FF6A6A;
+        margin-bottom: 5%;
+    }
+
 
 /* Artwork Section */
 
@@ -254,12 +293,40 @@
         background-size:cover;
     }
 
+/* Footer Section */
+
+    .footer .footer-copyrights{
+        text-align:center;
+        background-color: rgb(2 1 0 / 1);
+    }
+    
+    .footer .footer-copyrights p{
+        margin:30px 0;
+        color:#b5b5b4;
+        font-size:16px
+    }
 
 /* Screen Size Optimization */
 
     @media(max-width: 1279px){
         /* Large tablet Dimensions ( < 1280px width)*/
         /* ie: iPad Pro */
+
+        .loading-block {
+            margin-top: 45%;
+        }
+
+        .navbar{
+            background-color: rgb(2 1 0 / 0.9);
+        }
+
+        .dropdown-menu {
+            margin-top: 0.9rem;
+            background: transparent!important;
+            background-color: rgb(2 1 0 / 0)!important;
+            border-radius: 0;
+            border: none;
+        }
     }
 
     @media(max-width:768px){
@@ -268,4 +335,12 @@
 
     @media(max-width:480px){
         /* Phone dimensions */
+
+        .loading-block {
+            margin-top: 50%;
+        }
+
+        .navbar-brand {
+            font-size: 20px;
+        }
     }

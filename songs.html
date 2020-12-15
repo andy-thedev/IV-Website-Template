@@ -14,17 +14,17 @@
     <!-- Animate CSS Requirement for WOW JS Plugin -->
     <link rel="stylesheet" href="css/animate.css">
 
-    <title>Indivisual Website Template</title>
+    <title>(Song Section) IV Website Template</title>
   </head>
   <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+    <nav class="navbar linked-page fixed-top navbar-expand-xl navbar-dark">
       <div class="container-fluid">
         <!-- Left Menu -->
         <div class="collapse navbar-collapse" id="navbarNavDropdownLeft">
           <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link numero" href="#recent-releases">I</a>
+            <a class="nav-item nav-link numero" href="#">I</a>
             <a class="nav-item nav-link numero" href="#soundcloud-releases">II</a>
             <a class="nav-item nav-link numero" href="#">III</a>
             <a class="nav-item nav-link numero" href="#">IV</a>
@@ -35,17 +35,17 @@
           <i class="fas fa-headphones-alt"></i>
         </button>
         <!-- Center Brand -->
-        <a class="navbar-brand mx-auto" href="#">
+        <a class="navbar-brand mx-auto" href="index.html">
           INDIVISUAL
         </a>
         <!-- Right Menu Toggler -->
-        <button class="navbar-toggler right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Right Menu -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="songs.html">Songs</a>
+            <a class="nav-item nav-link" href="#">Songs</a>
             <a class="nav-item nav-link" href="#">News</a>
             <a class="nav-item nav-link" href="#">Contact</a>
             <li class="nav-item dropdown">
@@ -64,53 +64,39 @@
       </div>
     </nav>
 
-
-    <!-- Home Section -->
-
-    <section class="home">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
-        <!-- Carousel Items -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-          </div>
-          <div class="carousel-item">
-          </div>
-          <div class="carousel-item">
-          </div>
-          <div class="carousel-item">
-          </div>
-        </div>
-        <!-- Carousel Controls -->
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div>
-    </section>
-
     <!-- Songs Section -->
 
-    <section class="songs" id="recent-releases">
+    <section class="songs">
       <div class="container">
         <!-- Section Title/Description -->
-        <div class="row">
-          <div class="col-md-12">
-            <div class="page-header youtube-red wow fadeInDown">
-              <h1 class="youtube-red">RECENT RELEASES<small>Here are some of our most recent tracks</small></h1>
+        <div class="row start-of-page">
+            <div class="col-md-12">
+              <div class="page-header youtube-red wow fadeInDown">
+                <div class="loading-block" id="loading">
+                    <h1>
+                    <small class="loading-message">
+                        LOADING...
+                    </small>
+                    <small class="loading-message">
+                        Content will soon appear
+                    </small>
+                    <small class="loading-message">
+                        :)
+                    </small>
+                    <small class="loading-message">
+                        Thank you for your patience
+                    </small>
+                    </h1>
+                </div>
+                <h1 class="youtube-red">Youtube Releases
+                    <small>Because everybody loves #ff0000</small>
+                </h1>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Youtube Releases -->
+        <!-- Content (List of Songs) -->
+        <!-- Row 1 -->
         <div class="row">
           <div class="col-md-4">
             <div class="youtube-recent">
@@ -128,18 +114,57 @@
             </div>
           </div>
         </div>
+        <!-- Row 2 -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="youtube-recent">
+              <iframe width="100%" height="450" src="https://www.youtube.com/embed/AS5niN9qlUU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="youtube-recent">
+              <iframe width="100%" height="450" src="https://www.youtube.com/embed/KMxZYYx_ujE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="youtube-recent">
+              <iframe width="100%" height="450" src="https://www.youtube.com/embed/gWq_z46GldE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row">
+            <div class="col-md-4">
+            <div class="youtube-recent">
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/FdmawrDXAek" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="youtube-recent">
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/VoyO-tjVCVk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="youtube-recent">
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/4X6PwfYk9W4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            </div>
+        </div>
 
         <!-- Section Title/Description -->
         <div class="row" id="soundcloud-releases">
           <div class="col-md-12">
             <div class="page-header wow fadeInDown">
-              <h1>Soundcloud Releases<small>Especially for the #ff7700 loving users</small></h1>
+                <h1>Soundcloud Releases
+                    <small>Especially for the #ff7700 loving users</small>
+                </h1>
             </div>
           </div>
         </div>
 
-        <!-- Soundcloud Releases -->
-        <div class="row">
+        <!-- Row 3 -->
+        <div class="row end-of-page">
           <div class="col-md-4">
             <div class="soundcloud-recent">
               <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1139731957&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
@@ -181,22 +206,17 @@
       </div>
     </section>
 
-    <!-- Artwork Section -->
-
-    <!-- <section class="artwork">
-
-    </section> -->
     <section class="footer" id="contact">
-      <div class="footer-copyrights">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <p><i class="fa"></i> 2020. All rights reserved. Created by Andy Jung</p>
+        <div class="footer-copyrights">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p><i class="fa"></i> 2020. All rights reserved. Created by Andy Jung</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <!-- JQuery -->
     <script src="js/jquery-3.5.1.min.js"></script>
