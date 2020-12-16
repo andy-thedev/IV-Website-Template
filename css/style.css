@@ -1,5 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Raleway:900,800,700,600,400,300,200,100";
 @import "https://fonts.googleapis.com/css?family=Josefin+Sans:700,600,400";
+@import "https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap";
 
 /* Global Settings */
 
@@ -80,16 +81,29 @@
     }
 
     .start-of-page {
-        margin-top: 5%;
+        padding-top: 5%;
     }
 
     .end-of-page {
-        margin-bottom: 10%;
+        padding-bottom: 7%;
     }
 
     .loading-block {
         margin-top: 15%;
         margin-bottom: 100rem;
+    }
+
+    .loading-block .spinner-border {
+        /* Loading Spinner */
+
+        /* Dimensions */
+        width: 4rem;
+        height: 4rem;
+
+        /* Thickness */
+        font-size: 1.5rem;
+
+        color: #666;
     }
 
     .loading-message {
@@ -119,6 +133,12 @@
     .navbar-toggler {
         background: transparent;
         border: none;
+    }
+
+    .navbar-toggler i{
+        font-size: 25px;
+        width: 30px;
+        height: 30px;
     }
 
     .navbar-toggler:focus{
@@ -192,17 +212,6 @@
         background: #000;
     }
 
-    /* #carouselExampleIndicators .carousel-inner:before {
-        position: absolute;
-        content:'';
-        background: rgba(0,0,0,0.45);
-        top:0;
-        left:0;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-    } */
-
     #carouselExampleIndicators .carousel-inner .carousel-item {
         position: relative;
         height: 100%;
@@ -257,12 +266,12 @@
         color: #ff7700;
     }
 
-    .youtube-recent {
+    .songs .youtube-recent {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
 
-    .soundcloud-recent {
+    .songs .soundcloud-recent {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
@@ -271,11 +280,39 @@
         color: #ff0000;
     }
 
-    .page-header.youtube-red:after{
+    .songs .page-header.youtube-red:after{
         background-color:#FF6A6A;
         margin-bottom: 5%;
     }
 
+/* About Section */
+
+    .about{
+        background: #111;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .about h1{
+        font-family: Lora, serif;
+        font-size: 50px;
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .about .about-group-photo {
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .about .about-group-photo img{
+        width:75%;
+    }
+
+    .about .description {
+        margin: 0 auto;
+        width: 75%;
+    }
 
 /* Artwork Section */
 
@@ -295,15 +332,16 @@
 
 /* Footer Section */
 
-    .footer .footer-copyrights{
+    .footer{
         text-align:center;
-        background-color: rgb(2 1 0 / 1);
+        background-color:#000;
     }
-    
+
     .footer .footer-copyrights p{
-        margin:30px 0;
+        padding:30px 0;
         color:#b5b5b4;
-        font-size:16px
+        font-size:16px;
+        margin-bottom: 0;
     }
 
 /* Screen Size Optimization */
@@ -316,6 +354,7 @@
             margin-top: 45%;
         }
 
+        /* Navbar Section */
         .navbar{
             background-color: rgb(2 1 0 / 0.9);
         }
@@ -327,20 +366,90 @@
             border-radius: 0;
             border: none;
         }
+
+        /* Songs Section */
+        .songs .youtube-recent iframe {
+            height: 300px;
+        }
+
+        .songs .soundcloud-recent iframe {
+            height: 300px;
+        }
+
+        /* About Section */
+        .about h1{
+            font-size: 35px;
+        }
+
+        .about p{
+            font-size: 20px;
+        }
+        
     }
 
     @media(max-width:768px){
         /* iPad dimensions */
+
+        /* Songs Section */
+        .songs .youtube-recent iframe {
+            height: 200px;
+        }
+
+        .songs .soundcloud-recent iframe {
+            height: 200px;
+        }
+
+        /* About Section */
+        .about h1{
+            font-size: 25px;
+        }
+        .about p{
+            font-size: 15px;
+        }
+
+        
     }
 
     @media(max-width:480px){
         /* Phone dimensions */
 
+        .break-when {
+            display: block !important;
+        }
+
         .loading-block {
             margin-top: 50%;
         }
 
+        /* Navbar Section */
         .navbar-brand {
             font-size: 20px;
+        }
+
+        /* Songs Section */
+        .songs .youtube-recent iframe {
+            height: 350px;
+        }
+
+        .songs .soundcloud-recent iframe {
+            height: 350px;
+        }
+
+        /* About Section */
+        .about{
+            background: #111;
+            padding-top: 15%;
+        }
+
+        .about h1{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 0;
+            text-align: center;
+        }
+
+        .about p{
+            font-size: 14px;
+            text-align:center;
         }
     }
