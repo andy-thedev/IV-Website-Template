@@ -67,7 +67,7 @@
     p{
         /* Paragraph content in sections */
         font-family:josefin sans,sans-serif;
-        color:#828282;
+        color:#999;
         font-size:22px
     }
 
@@ -253,6 +253,18 @@
         height: 100%;
         width: 100%;
         background: url('../img/home4.jpg');
+        background-size: cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-position: center;
+    }
+
+    #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(5) {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background: url('../img/home5.jpg');
         background-size: cover;
         -webkit-background-size:cover;
         -moz-background-size:cover;
