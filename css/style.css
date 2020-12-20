@@ -7,6 +7,8 @@
     html {
         /*for smooth scrolling, when redirected to different parts of the page via ie: a button*/
         scroll-behavior: smooth;
+        width: 100%;
+        overflow-x: hidden;
     }
 
     body{
@@ -49,7 +51,7 @@
         text-transform:uppercase;
         color:#4b4741;
         text-align:center;
-        font-weight:800
+        font-weight:800;
     }
 
     .small,small{
@@ -68,7 +70,20 @@
         /* Paragraph content in sections */
         font-family:josefin sans,sans-serif;
         color:#999;
-        font-size:22px
+        font-size:22px;
+    }
+
+    a{
+        /* Paragraph content in sections */
+        font-family:josefin sans,sans-serif;
+        color:#999;
+        font-size:22px;
+        text-decoration: none;
+    }
+
+    a:hover{
+        /* Paragraph content in sections */
+        color:#fff;
     }
 
     .white{
@@ -212,7 +227,7 @@
         background: #000;
     }
 
-    #carouselExampleIndicators .carousel-inner .carousel-item {
+    .home #carouselExampleIndicators .carousel-inner .carousel-item {
         position: relative;
         height: 100%;
         width: 100%;
@@ -224,7 +239,7 @@
         background-position: center;
     }
 
-    #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
+    .home #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
         position: relative;
         height: 100%;
         width: 100%;
@@ -236,7 +251,7 @@
         background-position: center;
     }
 
-    #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
+    .home #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
         position: relative;
         height: 100%;
         width: 100%;
@@ -248,7 +263,7 @@
         background-position: center;
     }
 
-    #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(4) {
+    .home #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(4) {
         position: relative;
         height: 100%;
         width: 100%;
@@ -260,7 +275,7 @@
         background-position: center;
     }
 
-    #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(5) {
+    .home #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(5) {
         position: relative;
         height: 100%;
         width: 100%;
@@ -308,8 +323,7 @@
     .about h1{
         font-family: Lora, serif;
         font-size: 50px;
-        text-align: left;
-        padding-left: 1rem;
+        text-align: center;
     }
 
     .about .about-group-photo {
@@ -326,9 +340,9 @@
         width: 75%;
     }
 
-/* Artwork Section */
+/* Profile Section */
 
-    .artwork{
+    /* .artwork{
         position:relative;
         height:200vh;
         width:100%;
@@ -340,20 +354,128 @@
         -moz-background-size:cover;
         -o-background-size:cover;
         background-size:cover;
+    } */
+
+    .profile {
+        padding-top: 5%;
+        position: relative;
+        background: #040404;;
+        padding-bottom: 5%;
+    }
+
+    .profile .container {
+        margin-top: 5%;
+        width: 60%;
+    }
+
+    #ProfilecarouselExampleIndicators{
+        position: relative;
+    }
+
+    #ProfilecarouselExampleIndicators .carousel-inner {
+        position: relative;
+        width: 100%;
+        background: #040404;;
+    }
+
+    .profile .profile-photo {
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .profile .profile-photo img{
+        width:100%;
+    }
+
+    .profile .header {
+        margin-left: 2.5rem;
+    }
+
+    .profile .header h1{
+        text-align: left; 
+        font-size: 60px;
+    }
+
+    .profile .header h2{
+        text-align: left; 
+        margin: 2rem 0;
+        color: #444;
+    }
+
+    .profile .description {
+        margin-left: 2rem;
+        text-align: center;
+    }
+
+    .profile .description td {
+        padding: 0.7rem 0;
+    }
+
+    .profile .description i{
+        font-size: 2rem;
+        margin-right: 1rem;
+        color: #ff7700;
+    }
+
+    .profile .description .fab.fa-youtube {
+        color: #ff0000;
+    }
+
+    .profile .description .fas.fa-at {
+        color: #7FFFFF;
+    }
+
+    .profile .description .fab.fa-instagram {
+        color: #FF45E3;
+    }
+
+    .profile .description .type {
+        text-align: left;
     }
 
 /* Footer Section */
 
     .footer{
+        position: relative;
         text-align:center;
         background-color:#000;
     }
 
-    .footer .footer-copyrights p{
-        padding:30px 0;
-        color:#b5b5b4;
-        font-size:16px;
+    .footer p{
+        padding: 2rem 0;
+        color:#fff;
+        font-size:12px;
         margin-bottom: 0;
+    }
+
+    .footer .footer-copyrights {
+        text-align: right;
+        margin-right: 2rem;
+    }
+
+    .footer .footer-email {
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .footer .footer-social-icons {
+        padding: 2rem 0;
+    }
+
+    .footer .footer-social-icons a{
+        display: inline-block;
+        text-align: center;
+        padding: 0.2rem 0.5rem;
+        text-decoration: none;
+        color:#fff;
+        border-radius: 2px;
+        font-size:17px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer .footer-social-icons a:hover{
+        background: #f9c56a;
     }
 
 /* Screen Size Optimization */
@@ -361,6 +483,18 @@
     @media(max-width: 1279px){
         /* Large tablet Dimensions ( < 1280px width)*/
         /* ie: iPad Pro */
+
+        h1{
+            font-size: 35px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        a{
+            font-size: 20px;
+        }
 
         .loading-block {
             margin-top: 45%;
@@ -389,18 +523,33 @@
         }
 
         /* About Section */
+
         .about h1{
-            font-size: 35px;
+            text-align: left;
         }
 
-        .about p{
-            font-size: 20px;
+        /* Profile Section */
+
+        .profile .container {
+            margin-top: 5%;
+            width: 80%;
         }
         
+        .profile .description .type a{
+            font-size: 25px;
+        }
+
     }
 
     @media(max-width:768px){
         /* iPad dimensions */
+
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 15px;
+        }
 
         /* Songs Section */
         .songs .youtube-recent iframe {
@@ -412,18 +561,43 @@
         }
 
         /* About Section */
+
         .about h1{
             font-size: 25px;
+            text-align: center;
         }
         .about p{
             font-size: 15px;
         }
 
-        
+        /* Profile Section */
+
+        .profile .header {
+            margin-left: 2rem;
+        }
+
+        .profile .header h1{
+            font-size: 50px;
+        }
+
+        .profile .header h2{
+            text-align: left; 
+            margin: 1rem 0;
+            color: #444;
+        }
+
+        .profile .description .type a{
+            font-size: 20px;
+        }
+
     }
 
     @media(max-width:480px){
         /* Phone dimensions */
+
+        p {
+            font-size: 14px;
+        }
 
         .break-when {
             display: block !important;
@@ -461,7 +635,61 @@
         }
 
         .about p{
-            font-size: 14px;
             text-align:center;
+        }
+
+        /* Profile Section */
+
+        .profile .header {
+            margin-left: 0;
+        }
+
+        .profile .header h1{
+            font-size: 40px;
+        }
+
+        .profile .header h2{
+            text-align: left; 
+            color: #444;
+        }
+
+        .profile .description {
+            margin-left: 0;
+        }
+
+        .profile .description td {
+            padding: 0.5rem 0;
+        }
+
+        .profile .description i{
+            font-size: 1.5rem;
+        }
+
+        .profile .description .type a{
+            font-size: 20px;
+        }
+
+        /* Footer Section */
+
+        .footer .footer-email p {
+            font-size: 11px;
+        }
+
+        .footer .footer-copyrights p {
+            font-size: 10px;
+        }
+
+        .footer .footer-email {
+            text-align: center;
+            margin: auto;
+        }
+
+        .footer .footer-social-icons {
+            padding: 0 0;
+        }
+
+        .footer .footer-copyrights {
+            text-align: center;
+            margin: auto;
         }
     }
