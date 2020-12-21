@@ -14,7 +14,7 @@
     <!-- Animate CSS Requirement for WOW JS Plugin -->
     <link rel="stylesheet" href="css/animate.css">
 
-    <title>Indivisual Website Template</title>
+    <title>Indivisual</title>
   </head>
   <body>
 
@@ -27,7 +27,7 @@
             <a class="nav-item nav-link numero" href="#recent-releases">I</a>
             <a class="nav-item nav-link numero" href="#soundcloud-releases">II</a>
             <a class="nav-item nav-link numero" href="#about-us">III</a>
-            <a class="nav-item nav-link numero" href="#">IV</a>
+            <a class="nav-item nav-link numero" href="#profiles">IV</a>
           </div>
         </div>
         <!-- Left Menu Toggler -->
@@ -46,19 +46,19 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link" href="songs.html">Songs</a>
-            <a class="nav-item nav-link" href="#">News</a>
+            <a class="nav-item nav-link" href="news.html">News</a>
+            <a class="nav-item nav-link" href="about.html">About Us</a>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                About Us
+                Contact
               </a>
               <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">PG-13</a></li>
-                <li><a class="dropdown-item" href="#">Vermello</a></li>
-                <li><a class="dropdown-item" href="#">Roca Dianco</a></li>
-                <li><a class="dropdown-item" href="#">JAYAN</a></li>
+                <li><a class="dropdown-item" href="pg13.html">PG-13</a></li>
+                <li><a class="dropdown-item" href="vermello.html">Vermello</a></li>
+                <li><a class="dropdown-item" href="rocadianco.html">Roca Dianco</a></li>
+                <li><a class="dropdown-item" href="jayan.html">JAYAN</a></li>
               </ul>
             </li>
-            <a class="nav-item nav-link" href="#">Contact</a>
           </div>
         </div>
       </div>
@@ -78,15 +78,15 @@
         </ol>
         <!-- Carousel Items -->
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
+          <div class="carousel-item active" data-bs-interval="5000">
           </div>
-          <div class="carousel-item" data-bs-interval="3000">
+          <div class="carousel-item" data-bs-interval="5000">
           </div>
-          <div class="carousel-item" data-bs-interval="3000">
+          <div class="carousel-item" data-bs-interval="5000">
           </div>
-          <div class="carousel-item" data-bs-interval="3000">
+          <div class="carousel-item" data-bs-interval="5000">
           </div>
-          <div class="carousel-item" data-bs-interval="3000">
+          <div class="carousel-item" data-bs-interval="5000">
           </div>
         </div>
         <!-- Carousel Controls -->
@@ -185,45 +185,48 @@
       </div>
     </section>
 
+    <!-- About Section -->
+
     <section class="about" id="about-us">
-        <div class="container">
-          <div class="row">
-            <div class="about-group-photo">
-              <img src="img/about1.jpg">
-            </div>
-          </div>
-          <div class="row description">
-            <div class="col-md-4">
-              <h1 class="white">ABOUT US</h1>
-            </div>
-            <div class="col-md-8">
-                <p>
-                  Indivisual, following its acronym IV, 
-                  <br class="break-when">
-                  is a team based in Toronto,
-                  <br class="break-when">
-                  made up of four members : 
-                </p>
-                <p>
-                  PG-13, Vermello, Roca Dianco, JAYAN
-                </p>
-                <p>
-                  It conveys the meaning of individualistic artistry, the different specializations, and paths one must take in life, but sets forth to envision the common goal and progress of its members. 
-                </p>
-                <p>
-                  Its irregular spelling, specifically “visual”, also demonstrates the idea that music is not only about listening, but should include the appreciation of other senses, to allow the audience to literally feel, and visualize the works exhibited.
-                </p>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-group-photo">
+            <img src="img/about1.jpg">
           </div>
         </div>
+        <div class="row description">
+          <div class="col-md-4">
+            <h1 class="white">ABOUT US</h1>
+          </div>
+          <div class="col-md-8">
+              <p>
+                Indivisual, following its acronym IV, 
+                <br class="break-when">
+                is a team based in Toronto,
+                <br class="break-when">
+                made up of four members : 
+                <br class="break-when">
+                PG-13, Vermello, Roca Dianco, JAYAN
+              </p>
+              <p>
+                It conveys the meaning of individualistic artistry, the different specializations, and paths one must take in life, but sets forth to envision the common goal and progress of its members. 
+              </p>
+              <p>
+                Its irregular spelling, specifically “visual”, also demonstrates the idea that music is not only about listening, but should include the appreciation of other senses, to allow the audience to literally feel, and visualize the works exhibited.
+              </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Profile Section -->
-    <section class="profile">
+
+    <section class="profile" id="profiles">
       <div id="ProfilecarouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <!-- Carousel Items -->
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
+          <!-- Item 1 -->
+          <div class="carousel-item active" data-bs-interval="5000">
             <div class="container">
               <div class="row">
                 <div class="col-md-6">
@@ -292,6 +295,195 @@
               </div>
             </div>
           </div>
+
+          <!-- Item 2 -->
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="profile-photo">
+                    <img src="img/profile2.jpeg">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="header">
+                    <h1 class="white">Vermello</h1>
+                    <h2>Producer/Vocalist</h2>
+                  </div>
+                  <div class="description">
+                    <table style="width: 100%;">
+                      <tr>
+                        <td>
+                          <a href="https://soundcloud.com/daniel_iv">
+                            <i class="fab fa-soundcloud"></i>
+                          </a>
+                        </td>
+                        <td class="type">
+                          <a href="https://soundcloud.com/daniel_iv">
+                            Soundcloud
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="https://www.youtube.com/channel/UCeZW8Y6YM_z1E1CXb2r_tLA">
+                            <i class="fab fa-youtube"></i>
+                          </a>
+                        </td>
+                        <td class="type">
+                          <a href="https://www.youtube.com/channel/UCeZW8Y6YM_z1E1CXb2r_tLA">
+                            Youtube
+                          </a>
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>
+                          <a href="https://www.instagram.com/theonlydmin/">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                        </td>
+                        <td class="type">
+                          <a href="https://www.instagram.com/theonlydmin/">
+                            Instagram
+                          </a>
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>
+                          <a>
+                            <i class="fas fa-at"></i>
+                          </a>
+                        </td>
+                        <td class="type">
+                          <a style="color:#999;">
+                            daniel.min9609@gmail.com
+                          </a>
+                        </td>
+                      </tr>                   
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="profile-photo">
+                    <img src="img/profile3.jpeg">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="header">
+                    <h1 class="white">JAYAN</h1>
+                    <h2>Fashion Designer</h2>
+                  </div>
+                  <div class="description">
+                    <table style="width: 100%;">
+                      <tr>
+                        <td>
+                          <a href="https://www.instagram.com/doublejayan/">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                        </td>
+                        <td class="type">
+                          <a href="https://www.instagram.com/doublejayan/">
+                            Instagram
+                          </a>
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>
+                          <a>
+                            <i class="fas fa-at"></i>
+                          </a>
+                        </td>
+                        <td class="type">
+                          <a style="color:#999;">
+                            joonsunan@gmail.com
+                          </a>
+                        </td>
+                      </tr>                   
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="profile-photo">
+                    <img src="img/profile4.jpg">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="header">
+                    <h1 class="white">PG-13</h1>
+                    <h2>Artist/Artwork</h2>
+                  </div>
+                  <div class="description">
+                    <table style="width: 100%;">
+                      <tr>
+                        <td>
+                          <a href="https://soundcloud.com/indivisualiv">
+                            <i class="fab fa-soundcloud"></i>
+                          </a>
+                        </td>
+                        <td class="type">
+                          <a href="https://soundcloud.com/indivisualiv">
+                            Soundcloud
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="https://www.youtube.com/channel/UC6USgKUXbAwfKgzIXGs6pCw">
+                            <i class="fab fa-youtube"></i>
+                          </a>
+                        </td>
+                        <td class="type">
+                          <a href="https://www.youtube.com/channel/UC6USgKUXbAwfKgzIXGs6pCw">
+                            Youtube
+                          </a>
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>
+                          <a href="https://www.instagram.com/pg13.iv/">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                        </td>
+                        <td class="type">
+                          <a href="https://www.instagram.com/pg13.iv/">
+                            Instagram
+                          </a>
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>
+                          <a>
+                            <i class="fas fa-at"></i>
+                          </a>
+                        </td>
+                        <td class="type">
+                          <a style="color:#999;">
+                            indivisual.iv@gmail.com
+                          </a>
+                        </td>
+                      </tr>                   
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Carousel Controls -->
@@ -335,7 +527,7 @@
       </div>
     </section> -->
 
-    <section class= "footer">
+    <section class= "footer" id="footer">
 
         <div class="row">
           <div class="col-md">

@@ -14,7 +14,7 @@
     <!-- Animate CSS Requirement for WOW JS Plugin -->
     <link rel="stylesheet" href="css/animate.css">
 
-    <title>(Song Section) IV Website Template</title>
+    <title>Indivisual - Songs</title>
   </head>
   <body>
 
@@ -24,10 +24,10 @@
         <!-- Left Menu -->
         <div class="collapse navbar-collapse" id="navbarNavDropdownLeft">
           <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link numero" href="#">I</a>
+            <a class="nav-item nav-link numero" href="#youtube-releases">I</a>
             <a class="nav-item nav-link numero" href="#soundcloud-releases">II</a>
-            <a class="nav-item nav-link numero" href="#">III</a>
-            <a class="nav-item nav-link numero" href="#">IV</a>
+            <a class="nav-item nav-link numero" href="#footer">III</a>
+            <a class="nav-item nav-link numero" href="#footer">IV</a>
           </div>
         </div>
         <!-- Left Menu Toggler -->
@@ -39,24 +39,24 @@
           INDIVISUAL
         </a>
         <!-- Right Menu Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Right Menu -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link" href="#">Songs</a>
-            <a class="nav-item nav-link" href="#">News</a>
-            <a class="nav-item nav-link" href="#">Contact</a>
+            <a class="nav-item nav-link" href="news.html">News</a>
+            <a class="nav-item nav-link" href="about.html">About Us</a>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                About Us
+                Contact
               </a>
               <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">PG-13</a></li>
-                <li><a class="dropdown-item" href="#">Vermello</a></li>
-                <li><a class="dropdown-item" href="#">Roca Dianco</a></li>
-                <li><a class="dropdown-item" href="#">JAYAN</a></li>
+                <li><a class="dropdown-item" href="pg13.html">PG-13</a></li>
+                <li><a class="dropdown-item" href="vermello.html">Vermello</a></li>
+                <li><a class="dropdown-item" href="rocadianco.html">Roca Dianco</a></li>
+                <li><a class="dropdown-item" href="jayan.html">JAYAN</a></li>
               </ul>
             </li>
           </div>
@@ -100,7 +100,7 @@
 
         <!-- Content (List of Songs) -->
         <!-- Row 1 -->
-        <div class="row">
+        <div class="row" id="youtube-releases">
           <div class="col-md-4">
             <div class="youtube-recent">
               <iframe width="100%" height="450" src="https://www.youtube.com/embed/videoseries?list=PLfhZYVxDt8Ff0wcQyznbqfDPoOB12qegM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -210,17 +210,48 @@
       </div>
     </section>
 
-    <section class="footer" id="contact">
-        <div class="footer-copyrights">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <p><i class="fa"></i> 2020. All rights reserved. Created by Andy Jung</p>
-              </div>
-            </div>
+    <section class= "footer" id="footer">
+
+      <div class="row">
+        <div class="col-md">
+          <div class="footer-email">
+            <p>
+              For Business and Inquiries:
+              <br>
+              indivisual.iv@gmail.com
+            </p>
           </div>
         </div>
-      </section>
+        <div class="col-md">
+          <div class="footer-social-icons">
+            <a href="https://soundcloud.com/indivisualiv">
+              <i class="fab fa-soundcloud"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UC6USgKUXbAwfKgzIXGs6pCw">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/indivisual.iv/">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-at"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/won-tae-jung/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="footer-copyrights">
+              <p>
+                <i class="far fa-copyright"></i> 2020. All rights reserved.
+                <br>
+                Designed and created by PG-13
+              </p>
+          </div>
+        </div>
+      </div>
+  </section>
 
     <!-- JQuery -->
     <script src="js/jquery-3.5.1.min.js"></script>

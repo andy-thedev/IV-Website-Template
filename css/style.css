@@ -198,6 +198,7 @@
 
     .dropdown-item {
         color: #fff;
+        font-size: 15px;
     }
 
     .dropdown-toggle::after {
@@ -205,11 +206,11 @@
     }
 
     .dropdown-toggled {
-        text-align: center;
+        text-align: center!important;
     }
 
     .dropdown-untoggled {
-        text-align: left;
+        text-align: left!important;
     }
 
 /* Home Section */
@@ -332,12 +333,12 @@
     }
 
     .about .about-group-photo img{
-        width:75%;
+        width:100%;
     }
 
     .about .description {
         margin: 0 auto;
-        width: 75%;
+        width: 100%;
     }
 
 /* Profile Section */
@@ -357,10 +358,10 @@
     } */
 
     .profile {
-        padding-top: 5%;
+        padding-top: 3%;
         position: relative;
         background: #040404;;
-        padding-bottom: 5%;
+        padding-bottom: 3%;
     }
 
     .profile .container {
@@ -384,11 +385,11 @@
     }
 
     .profile .profile-photo img{
-        width:100%;
+        width:90%;
     }
 
     .profile .header {
-        margin-left: 2.5rem;
+        margin-left: 1rem;
     }
 
     .profile .header h1{
@@ -403,7 +404,6 @@
     }
 
     .profile .description {
-        margin-left: 2rem;
         text-align: center;
     }
 
@@ -417,20 +417,43 @@
         color: #ff7700;
     }
 
+    .profile .description i:hover{
+        color: #FFC18C;
+    }
+
     .profile .description .fab.fa-youtube {
         color: #ff0000;
     }
 
+    .profile .description .fab.fa-youtube:hover {
+        color: #ff8a8a;
+    }
+
     .profile .description .fas.fa-at {
-        color: #7FFFFF;
+        color: #9FFFFF;
     }
 
     .profile .description .fab.fa-instagram {
-        color: #FF45E3;
+        color: #FF88ED;
+    }
+
+    .profile .description .fab.fa-instagram:hover{
+        color: #FFD1F8;
     }
 
     .profile .description .type {
         text-align: left;
+    }
+
+/* News Page */
+
+    .news .page-header h1{
+        color: #ff7700;
+    }
+
+    .news .card {
+        margin: 1rem auto 0;
+        float: none;
     }
 
 /* Footer Section */
@@ -465,7 +488,7 @@
     .footer .footer-social-icons a{
         display: inline-block;
         text-align: center;
-        padding: 0.2rem 0.5rem;
+        padding: 0.4rem 0.5rem;
         text-decoration: none;
         color:#fff;
         border-radius: 2px;
@@ -535,10 +558,31 @@
             width: 80%;
         }
         
+        .profile .header {
+            margin-left: 0;
+        }
+        
+        .profile .description i{
+            margin-right: 1rem;
+        }
+
         .profile .description .type a{
             font-size: 25px;
         }
 
+        .profile-mobile {
+            margin-top: 20.2rem;
+            margin-bottom: 20.2rem;
+        }
+
+        /* News Sction */
+        .news .page-header{
+            margin-top: 15rem;
+        }
+
+        .news .end-of-page{
+            margin-bottom: 15rem;
+        }
     }
 
     @media(max-width:768px){
@@ -572,12 +616,8 @@
 
         /* Profile Section */
 
-        .profile .header {
-            margin-left: 2rem;
-        }
-
         .profile .header h1{
-            font-size: 50px;
+            font-size: 40px;
         }
 
         .profile .header h2{
@@ -586,10 +626,57 @@
             color: #444;
         }
 
+        .profile .description i{
+            font-size: 1.5rem;
+        }
+
         .profile .description .type a{
             font-size: 20px;
         }
 
+        /* News Sction */
+        .news .page-header{
+            margin-top: 10rem;
+        }
+
+        .news .end-of-page{
+            margin-bottom: 10rem;
+        }
+
+    }
+
+    @media(max-width: 540px) {
+        /* Surface Duo Dimensions */
+
+        /* Profile Sction */
+        .profile-mobile {
+            margin-top: 7rem;
+            margin-bottom: 7rem;
+        }
+
+        /* News Sction */
+        .news .page-header{
+            margin-top: 6rem;
+        }
+
+        .news .end-of-page{
+            margin-bottom: 5rem;
+        }
+
+        .news .card{
+            margin: 2rem auto;
+        }
+
+        /* Footer Section */
+        .footer .footer-email {
+            text-align: center;
+            margin: auto;
+        }
+
+        .footer .footer-copyrights {
+            text-align: center;
+            margin: auto;
+        }
     }
 
     @media(max-width:480px){
@@ -640,25 +727,18 @@
 
         /* Profile Section */
 
-        .profile .header {
-            margin-left: 0;
+        .profile .profile-photo img{
+            width:100%;
         }
 
         .profile .header h1{
-            font-size: 40px;
+            font-size: 30px;
+            text-align: center;
         }
 
         .profile .header h2{
-            text-align: left; 
-            color: #444;
-        }
-
-        .profile .description {
-            margin-left: 0;
-        }
-
-        .profile .description td {
-            padding: 0.5rem 0;
+            font-size: 20px;
+            text-align: center;
         }
 
         .profile .description i{
@@ -666,7 +746,7 @@
         }
 
         .profile .description .type a{
-            font-size: 20px;
+            font-size: 17px;
         }
 
         /* Footer Section */
@@ -679,17 +759,7 @@
             font-size: 10px;
         }
 
-        .footer .footer-email {
-            text-align: center;
-            margin: auto;
-        }
-
         .footer .footer-social-icons {
             padding: 0 0;
-        }
-
-        .footer .footer-copyrights {
-            text-align: center;
-            margin: auto;
         }
     }
