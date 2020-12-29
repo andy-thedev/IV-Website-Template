@@ -7,12 +7,23 @@
     html {
         /*for smooth scrolling, when redirected to different parts of the page via ie: a button*/
         scroll-behavior: smooth;
+
+        /* Fit to Screen */
         width: 100%;
+        margin: 0px;
+        padding: 0px;
         overflow-x: hidden;
     }
 
     body{
-        height:100%;
+
+        /* Fit to Screen */
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+
+        background-color:#000;
         overflow-y:scroll;
     }
 
@@ -290,6 +301,11 @@
 
 /* Song Section */ 
 
+    .songs {
+        background-color:#fff;
+        padding-bottom: 4%;
+    }
+
     .songs .page-header h1{
         color: #ff7700;
     }
@@ -318,7 +334,7 @@
     .about{
         background: #111;
         padding-top: 5%;
-        padding-bottom: 5%;
+        padding-bottom: 3%;
     }
 
     .about h1{
@@ -446,6 +462,10 @@
     }
 
 /* News Page */
+
+    .news {
+        background-color:#fff;
+    }
 
     .news .page-header h1{
         color: #ff7700;
@@ -577,11 +597,11 @@
 
         /* News Sction */
         .news .page-header{
-            margin-top: 15rem;
+            margin-top: 10rem;
         }
 
         .news .end-of-page{
-            margin-bottom: 15rem;
+            padding-bottom: 15rem;
         }
     }
 
@@ -636,11 +656,11 @@
 
         /* News Sction */
         .news .page-header{
-            margin-top: 10rem;
+            margin-top: 7rem;
         }
 
         .news .end-of-page{
-            margin-bottom: 10rem;
+            padding-bottom: 10rem;
         }
 
     }
@@ -657,10 +677,11 @@
         /* News Sction */
         .news .page-header{
             margin-top: 6rem;
+            margin-bottom: 0.5rem;
         }
 
         .news .end-of-page{
-            margin-bottom: 5rem;
+            padding-bottom: 5rem;
         }
 
         .news .card{
