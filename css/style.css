@@ -404,6 +404,10 @@
         width:90%;
     }
 
+    .profile .profile-photo picture{
+        width:90%;
+    }
+
     .profile .header {
         margin-left: 1rem;
     }
