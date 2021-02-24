@@ -5,7 +5,7 @@ A repository containing the static website template for Indivisual IV, an entert
 
 Front-end: HTML, CSS, JavaScript, jQuery
 
-# /:
+# /
 
 **index.html**  
 The homepage, summarizing the sub-pages listed below in a scrollable overview.
@@ -22,7 +22,7 @@ The about page, describing the members, meaning, and purpose of Indivisual IV.
 **jayan.html , pg13.html , rocadianco.html , vermello.html:**  
 The contact pages for each member in Indivisual IV
 
-# /css:
+# /css
 
 **style.css**  
 The general styling specifications of the website
@@ -30,7 +30,7 @@ The general styling specifications of the website
 **animate.css:**  
 See https://animate.style/
 
-# /js:
+# /js
 
 **main.js:**  
 The main javascript file, containing functions that describe the navbar's behaviours, and lazyload of youtube video embeddings
