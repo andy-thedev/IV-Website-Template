@@ -1,7 +1,7 @@
 # IV-Website-Template
-A repository containing the static website template for Indivisual IV, an entertainment production crew in Toronto.
-
 See the **working, deployed website** at https://www.indivisualiv.com
+
+A repository containing the static website template for Indivisual IV, an entertainment production crew in Toronto.
 
 Front-end: HTML, CSS, JavaScript, jQuery
 
