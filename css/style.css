@@ -243,7 +243,7 @@
         position: relative;
         height: 100%;
         width: 100%;
-        background: url('../img/home1.jpg');
+        background: url('../img/last dance carousel.jpg');
         background-size: cover;
         -webkit-background-size:cover;
         -moz-background-size:cover;
@@ -255,7 +255,7 @@
         position: relative;
         height: 100%;
         width: 100%;
-        background: url('../img/home2.jpg');
+        background: url('../img/leftover carousel3.jpg');
         background-size: cover;
         -webkit-background-size:cover;
         -moz-background-size:cover;
@@ -267,7 +267,7 @@
         position: relative;
         height: 100%;
         width: 100%;
-        background: url('../img/home3.jpg');
+        background: url('../img/home1.jpg');
         background-size: cover;
         -webkit-background-size:cover;
         -moz-background-size:cover;
@@ -279,7 +279,7 @@
         position: relative;
         height: 100%;
         width: 100%;
-        background: url('../img/home4.jpg');
+        background: url('../img/home2.jpg');
         background-size: cover;
         -webkit-background-size:cover;
         -moz-background-size:cover;
@@ -288,6 +288,30 @@
     }
 
     .home #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(5) {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background: url('../img/home3.jpg');
+        background-size: cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-position: center;
+    }
+
+    .home #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(6) {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background: url('../img/home4.jpg');
+        background-size: cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-position: center;
+    }
+
+    .home #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(7) {
         position: relative;
         height: 100%;
         width: 100%;
@@ -467,6 +491,11 @@
 
 /* News Page */
 
+    .news .list-group-item-progress {
+        background-color: #ff7700;
+        color: white;
+    }
+
     .news {
         background-color:#fff;
     }
@@ -478,6 +507,15 @@
     .news .card {
         margin: 1rem auto 0;
         float: none;
+    }
+
+    .news .card-text {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .news .list-group-item {
+        font-size: 0.9rem;
     }
 
 /* Footer Section */
